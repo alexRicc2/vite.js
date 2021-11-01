@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.text{
+  color: white;
+  width: 450px;
+  max-width: 100%;
+}
+.done{
+  text-decoration: line-through;
+  color: white;
+  width: 450px;
+}
+
+.button{
+  padding: 5px;
+  background-color: white;
+  border: 1px solid;
+  width: 60px;
+}

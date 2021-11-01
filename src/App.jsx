@@ -1,44 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-
+import Header from "./components/Header"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Textinho from "./pages/Textinho"
+import Coracao from "./pages/Coracao"
+import Listinha from "./pages/Listinha"
+import Footer from "./components/Footer"
+import Pagina404 from "./pages/404"
+import Home from "./pages/Home"
 function App() {
-  const [count, setCount] = useState(0)
+  //Oi lindaa ta olhando o código ?? I cat you :P
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
+        <Route path='/Textinho'>
+          <Textinho />
+        </Route>
+        <Route path='/coracao'>
+          <Coracao />
+        </Route>
+        <Route path='/listinha'>
+          <Listinha />
+        </Route>
+        <Route>
+          <Pagina404 />
+        </Route>
+        
+      </Switch>
+      <Footer />
+    </Router>
   )
 }
 

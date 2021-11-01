@@ -1,0 +1,33 @@
+.container {
+  min-width: 50%;
+  max-width: 640px;
+  border-radius: 10px;
+}
+.header{
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 1.5rem;
+  background-color: #5840BA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Lobster', cursive;
+  img{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.corpo{
+ background-color: lighten(#5840BA, 10%);
+ padding: 1.5rem;
+ color: wheat;
+ line-height: 1.5;
+ border-radius: 0 0 10px 10px;
+
+ strong{
+   font-size: 1.1rem;
+   text-transform: uppercase;
+   color: white;
+ }
+}

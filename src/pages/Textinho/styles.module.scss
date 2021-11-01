@@ -1,0 +1,15 @@
+.container{
+  padding: 50px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/imagens/Capture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+  @media screen and (max-width: 900px) {
+    height: unset;
+    
+  }
+}

@@ -1,0 +1,35 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+
+  padding: 0 24px;
+  background-color: #171717;
+
+}
+.itens{
+  display: flex;
+  gap: 1rem;
+}
+.link{
+  
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  @media screen and (max-width: 450px){
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 350px){
+    font-size: 0.8rem;
+  }
+
+  &:hover{
+    color: #8e2de2;
+  }
+}
+.coracao{
+  width: 40px;
+  height: 40px;
+}
